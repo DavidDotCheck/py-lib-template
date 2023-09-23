@@ -25,7 +25,7 @@ jobs:
     - name: Determine coverage status
       run: |
         coverage_percent=$(coverage report --show-missing | grep 'TOTAL' | awk '{print $(NF-1)}' | sed 's/%//')
-        echo "Coverage is $coverage_percent%"
+        echo "Coverage Output: $coverage_output"
         if (( coverage_percent >= 70 )); then
           echo "COVERAGE_CHECK=success" >> $GITHUB_ENV
         else
