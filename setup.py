@@ -1,5 +1,5 @@
 # setup.py
-# Author: {{project.author}} <{{project.email}}}>
+# Author: {{project.author}} <{{project.email}}>
 from setuptools import setup, find_packages
 
 setup(

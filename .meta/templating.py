@@ -223,7 +223,7 @@ class FileGenerator:
             for key in options:
                 option = options[key]
                 if key in selected_options or option.mandatory:
-                    # {file:{key: choice}}}
+                    # {file:{key: choice}}
                     self.choices[file.name] = {key: option for key in selected_options}
                     option.include = True
 
