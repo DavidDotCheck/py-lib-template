@@ -121,7 +121,7 @@ class GitHubDeviceAuth:
         self.user = LimitedGitHubUser(**user)
         return self.user
 
-    def getRepositories(self):
+    def get_repositories(self):
         self.authorize()
         if not self.user:
             self.get_user_info()
@@ -140,13 +140,13 @@ class GitHubDeviceAuth:
         ]
         return self.repos
 
-    def getWriteRepositories(self):
+    def get_write_repositories(self):
         self.authorize()
-        repos = self.getRepositories()
+        repos = self.get_repositories()
         write_repos = [repo for repo in repos if repo.permissions["admin"]]
         return write_repos
 
-    def getEmails(self):
+    def get_emails(self):
         response = requests.get(
             "https://api.github.com/user/emails", headers=self.headers
         )
@@ -179,8 +179,8 @@ class Github:
 
     def load_user_info(self):
         self.user = self.github.get_user_info()
-        self.write_repos = self.github.getWriteRepositories()
-        self.emails = self.github.getEmails()
+        self.write_repos = self.github.get_write_repositories()
+        self.emails = self.github.get_emails()
 
     def prompt_app_install(self):
         tries = 0
