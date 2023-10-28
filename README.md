@@ -5,6 +5,7 @@
 `py-lib-template` is a Python library template I wrote to help me get started with new projects.
 It includes an example module and test, as well as configuration for building documentation and packaging the project.
 It autoconfigures the GITHUB repository and automates testing, branch protection and code coverage reporting without the need for external services.
+You can view the finished project [here](https://github.com/DavidDotCheck/py-lib-template-demo).
 
 ## Installation
 

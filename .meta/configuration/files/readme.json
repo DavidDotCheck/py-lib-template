@@ -11,7 +11,7 @@
   "options": {
     "base": {
       "content": [
-        "# {{project.package_name}}",
+        "# {{repo.name}}",
         "",
         "[![License: {{choices.license.meta.name}}](https://img.shields.io/badge/license-{{choices.license.meta.short_name}}-blue.svg)]({{choices.license.meta.url}})",
         "[![PyPI version](https://badge.fury.io/py/{{project.distribution_name}}.svg)](https://badge.fury.io/py/{{project.distribution_name}})",
