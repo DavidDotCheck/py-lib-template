@@ -1,5 +1,3 @@
-# venv_manager.py
-
 import os
 import sys
 import subprocess
@@ -34,6 +32,8 @@ Alternatively, you can either activate the virtual environment manually with the
 - Windows: `.venv\Scripts\activate`
 - Linux/Mac: `source .venv/bin/activate`
 Or configure your terminal to activate the environment automatically.
+
+Finally, if you want, you can allow force pushes for yourself in the repo settings and create a new branch for development.
 """
 
 PROJECT_TEXT = """
